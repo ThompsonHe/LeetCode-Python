@@ -62,8 +62,6 @@ class Solution:
 
         if (len(nums) == 0):
             return 0
-        elif (len(nums) == 1):
-            return 1
         index_real = 1
         index_group = 0
         for i in range(1, len(nums)):
@@ -79,8 +77,27 @@ solution = Solution()
 result = solution.removeDuplicate([1, 1, 2])
 print(result)
 
+class Solution1:
+    def removeDuplicate(self, nums) -> int:
+        """
+        :param nums: List[int]
+        :return: int
+        """
+        if len(nums) == 0:
+            return 0
+        index_real = 1
+        index_group = 0
+        for i in range(1, len(nums)):
+            if nums[i] == nums[index_group]:
+                continue
+            else:
+                nums[index_real] = nums[i]
+                index_real += 1
+                index_group = i
+        return index_real
 
-
-
+solution = Solution1()
+result = solution.removeDuplicate([1, 1, 2])
+print(result)
 
 
