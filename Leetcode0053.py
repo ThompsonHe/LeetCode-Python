@@ -34,7 +34,7 @@ print(result)
 class Solution2:
     def maxSubArray(self, nums):
         """
-        二分法
+        分治法
         :param nums: List[int]
         :return: int
         """
