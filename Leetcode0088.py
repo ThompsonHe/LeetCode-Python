@@ -21,3 +21,18 @@ nums2 = [2,5,6],       n = 3
 
 
 """
+class Solution:
+    def merge(self, nums1, m, nums2, n):
+        """
+        Do not return anything, modify nums1 in-place instead.
+
+        :param nums1: List[int]
+        :param m: int
+        :param nums2: List[int]
+        :param n: int
+        :return: None
+        """
+
+        if m
+
+
